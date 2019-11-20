@@ -1,0 +1,75 @@
+/* Naked elements */
+.container {
+  max-width: 1300px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+  color: $color-grey-light;
+}
+  
+h2 {
+  font-size: 20px;
+  font-weight: $font-semibold;
+  color: $color-grey-light;
+}
+  
+h3 {
+  font-size: 17px;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+  color: $color-grey-light;
+}
+
+h4 {
+  font-size: 17px;
+  font-weight: $font-semibold;
+  color: $color-grey-light;
+}
+
+h5 {
+  font-size: 2vh;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+  color: $color-grey;
+}
+
+h6 {
+  font-size: 2vh;
+  font-weight: $font-semibold;
+  color: $color-grey;
+}
+
+p {
+  font-size: 12px;
+  font-weight: $font-normal;
+}
+
+a{
+  text-decoration: none;
+  color: $color-blue;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background: $color-grey-light;
+  
+}
+
+.icon {
+  size: 2vh;
+  color: $color-grey;
+  font-family: "Glyphter";
+}

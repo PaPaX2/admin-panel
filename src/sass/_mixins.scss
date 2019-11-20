@@ -1,0 +1,9 @@
+@mixin topbar-box {
+  border-left: thin solid $color-grey-light;
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}

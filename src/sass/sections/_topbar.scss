@@ -1,0 +1,26 @@
+.top-bar {
+  background-color: $color-semiwhite;
+  height: 50px;
+  color: $color-grey;
+}
+
+.bar-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 50px;
+  border-bottom: thin solid $color-grey-light;
+  border-right: thin solid $color-grey-light;
+}
+
+.small-size {
+  @include topbar-box;
+  min-width: 30px;
+}
+
+.medium-size {
+  @include topbar-box;
+  min-width: 120px;
+  
+}
+

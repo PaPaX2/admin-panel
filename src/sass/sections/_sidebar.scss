@@ -1,0 +1,107 @@
+.sidebar {
+  position: fixed;
+  height: 100%;
+  max-width: 200px;
+  background-color: $color-dark;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  color: $color-semiwhite;
+  width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+  width: -moz-max-content;    /* Firefox/Gecko */
+  width: max-content;
+  z-index: 1;
+}
+
+.container-side {
+  margin: 10px;
+  padding: 5px;
+}
+
+.side-header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 10px 0;
+  color: $color-semiwhite;
+  min-width: 20%;
+  max-width: 150px;
+  justify-content: space-around;
+  height: 30px;
+ 
+  a {
+    color: $color-semiwhite;
+  }
+}
+
+.logo {
+  font-family: 'Just Another Hand', cursive;
+  font-size: 2rem;
+  padding: 0 10px 0 0;
+  white-space: nowrap;
+}
+
+.hamburger {
+  font-size: 3vh;
+  padding: 0;
+}
+
+.main-menu {
+  margin: 0 auto;
+  font-size: 2vh;
+}
+
+.menu-item {
+  margin: 5px auto;
+  display: block;
+  white-space: nowrap;
+  
+      
+  i {
+    width: 2vh;
+    margin-right: 10px;
+  }
+
+  a {
+    color: $color-grey;
+  }
+}
+
+.menu-item:hover {
+  border-left: 2px solid $color-orange;
+
+  a {
+    color: $color-semiwhite;
+  }
+}
+
+.side-manager {
+  margin-top: 20px;
+  border-top: thin solid $color-grey-light;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.manager-list {
+  display: flex;
+  height: 25px;
+  margin-left: 15px;
+  font-size: 2vh;
+  align-items: center;
+  
+  img {
+    margin-right: 15px;
+  }
+}
+
+.face-icon {
+  background-image: url(/images/manager.jpg);
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  border-style: none;
+}
