@@ -6,18 +6,19 @@
       <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand&display=swap" rel="stylesheet">
       <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
       <link rel="stylesheet" href="css/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
-    <div class="container">    
-      <section class="top-bar">
+  <body>   
+      <section class="top-bar pc">
         <div class="bar-content">
             <div class="amount medium-size">
               <div><i class="fas fa-wallet"></i></div>
-              <div class="jsBudget">
+              <div class="budget">
                 <ul>
                   <li>$1,500.00</li>
                 </ul>
               </div>
+              <i class="fas fa-angle-down"></i>
             </div>
             <div class="info small-size"><i class="far fa-bell"></i></div>
             <div class="user medium-size">
@@ -33,29 +34,199 @@
               <div class="logo col-7 "><a href="#home">Just do it.</a></div>
               <div class="hamburger col-3"><a href="#"><i class="fas fa-bars"></i></a></div>
             </div>
+            <div class="show">
             <div class="sidebar-nav">
               <ul class="main-menu">
-                <li class="col-9 menu-item"><a href="#"><i class="far fa-star"></i>General</a></li>
-                <li class="col-9 menu-item"><a href="#"><i class="far fa-list-alt"></i>Details</a></li>
-                <li class="col-9 menu-item"><a href="#"><i class="fas fa-link"></i>Links</a></li>
-                <li class="col-9 menu-item"><a href="#"><i class="far fa-newspaper"></i>Banners</a></li>
-                <li class="col-9 menu-item"><a href="#"><i class="far fa-user"></i>Personal Data</a></li>
-                <li class="col-9 menu-item"><a href="#"><i class="fas fa-dollar-sign"></i>Payout</a></li>
-                <li class="col-9 menu-item"><a href="#"><i class="fas fa-undo"></i>Postback</a></li>
+                <li class="menu-item"><a href="#"><i class="far fa-star"></i>General</a></li>
+                <li class="menu-item"><a href="#"><i class="far fa-list-alt"></i>Details</a></li>
+                <li class="menu-item"><a href="#"><i class="fas fa-link"></i>Links</a></li>
+                <li class="menu-item"><a href="#"><i class="far fa-newspaper"></i>Banners</a></li>
+                <li class="menu-item"><a href="#"><i class="far fa-user"></i>Personal Data</a></li>
+                <li class="menu-item"><a href="#"><i class="fas fa-dollar-sign"></i>Payout</a></li>
+                <li class="menu-item"><a href="#"><i class="fas fa-undo"></i>Postback</a></li>
               </ul>
             </div>
-            <div class="side-manager jsActive">
-              <h5 class="col-9">your manager</h5>
-              <a class="manager-list" href="#"><span class="face-icon">Mikhael E.</span></a>
+            <div class="sidebar-manager">
+              <h3>your manager</h3>
+              <a class="manager-list" href="#"><img class="face face2" src="/images/manager.jpg" alt="manager">Mikhael E.</a>
+            </div>
             </div>
         </div>
       </section>
       <section class="main-content">
-        <div class="container">
-
+        <div class="content top">
+          <!-- Statistic-->
+            <div class="title-section">
+              <h3>general statistic</h3>
+            </div>
+            <div class="section-row">
+              <div class="callendar">
+                <div class="date">
+                  <p>16.05.2016</p>
+                </div>
+                <div class="date">
+                  <span class="right-border"><p></p></span>
+                  <p>16.05.2016</p>
+                </div>
+                <div class="date-callendar">
+                    <a href="#"><i class="fas fa-calendar-alt"></i></a>
+                </div>
+              </div>
+              <a class="btn btn-refresh" href="#" ><i class="fas fa-redo"></i></a>
+            </div>
+            <div class="section-row">
+              <div class="statistic-data">
+                <div class="table-2-cells">
+                  <div class="grid-item-1">
+                    <div class="cell-left">
+                      <h4 class="sub-cell">Visit Signups</h4>
+                      <p class="sub-cell">124</p>
+                    </div>
+                  </div>
+                  <div class="grid-item-2">
+                    <div class="cell-right">
+                      <h4 class="sub-cell">Net Deposit</h4>
+                      <p class="sub-cell">564</p>
+                    </div>
+                  </div>
+                  <div class="grid-item-3">
+                    <div class="cell-left">
+                      <h4 class="sub-cell">FTD</h4>
+                      <p class="sub-cell">445</p>
+                    </div>
+                  </div>
+                  <div class="grid-item-4">
+                    <div class="cell-right">
+                      <h4 class="sub-cell">Turn over</h4>
+                      <p class="sub-cell">432</p>
+                    </div>
+                  </div>
+                </div>
+              <div class="chart">
+                <h4>Earnings chart</h4>
+                <div class="legend">
+                  <div class="signups"><p>Signups</p></div>
+                  <div class="ftd"><p>FTD</p></div>
+                  <div class="earned"><p>Earned</p></div>
+                </div>
+                <img src="images/chart1.png" alt="chart1">
+              </div>
+          </div>
         </div>
-      </section>
-    </div>
+      </div>
+      <!--Links-->
+      <div class="content bottom">
+        <div class="title-section">
+          <h3>links</h3>
+        </div>
+        <div class="section-column">
+            <a class="btn btn-add" href="#"><p>+ add new</p></a>
+          
+            <table class="table-3-cells">
+              <tr>
+                <td><p>Home page</p></td>
+                <td><a>http://www.homepage.com</a></td>
+                <td>
+                  <i class="fas fa-link"></i>
+                  <i class="fas fa-trash-alt"></i>
+                </td>
+              </tr>
+              <tr>
+                <td><p>Currently offer</p></td>
+                <td><a>http://www.currently.com</a></td>
+                <td>
+                  <i class="fas fa-link"></i>
+                  <i class="fas fa-trash-alt"></i>
+                </td>
+              </tr>
+              <tr>
+                <td><p>Blurpix</p></td>
+                <td><a>http://www.blurpix.com</a></td>
+                <td>
+                  <i class="fas fa-link"></i>
+                  <i class="fas fa-trash-alt"></i>
+                </td>
+              </tr>
+              <tr>
+                <td><p>Your site</p></td>
+                <td><a>http://www.yoursite.com</a></td>
+                <td>
+                  <i class="fas fa-link"></i>
+                  <i class="fas fa-trash-alt"></i>
+                </td>
+              </tr>
+              <tr>
+                <td><p>Google</p></td>
+                <td><a>http://www.google.com</a></td>
+                <td>
+                  <i class="fas fa-link"></i>
+                  <i class="fas fa-trash-alt"></i>
+                </td>
+              </tr>
+              <tr>
+                <td><p>Facebook</p></td>
+                <td><a>http://www.facebook.com</a></td>
+                <td>
+                  <i class="fas fa-link"></i>
+                  <i class="fas fa-trash-alt"></i>
+                </td>
+              </tr>
+              <tr>
+                <td><p>Dashboard</p></td>
+                <td><a>http://www.dashboard.com</a></td>
+                <td>
+                  <i class="fas fa-link"></i>
+                  <i class="fas fa-trash-alt"></i>
+                </td>
+              </tr>
+              <tr>
+                <td><p>Blurax</p></td>
+                <td><a>http://www.blurax.com</a></td>
+                <td>
+                  <i class="fas fa-link"></i>
+                  <i class="fas fa-trash-alt"></i>
+                </td>
+              </tr>
+              <tr>
+                <td><p>Piece of Wine</p></td>
+                <td><a>http://www.pieceofwine.com</a></td>
+                <td>
+                  <i class="fas fa-link"></i>
+                  <i class="fas fa-trash-alt"></i>
+                </td>
+              </tr>
+              <tr>
+                <td><p>Twitter</p></td>
+                <td><a>http://www.twitter.com</a></td>
+                <td>
+                  <i class="fas fa-link"></i>
+                  <i class="fas fa-trash-alt"></i>
+                </td>
+              </tr>
+            </table>
+          <a class="btn btn-add" href="#"><p>+ add new</p></a>
+        </div>
+      </div>
+    </section>
+    <section class="top-bar mobile">
+      <div class="bar-content">
+          <div class="amount medium-size">
+            <div><i class="fas fa-wallet"></i></div>
+            <div class="budget">
+              <ul>
+                <li>$1,500.00</li>
+              </ul>
+            </div>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <div class="info small-size"><i class="far fa-bell"></i></div>
+          <div class="user medium-size">
+            <div><i class="far fa-user-circle"></i></div>
+            <div><a>Leonardo diCaprio</a></div>
+          </div>
+          <div class="exit small-size"><i class="fas fa-sign-out-alt"></i></div>
+      </div>
+    </section>
   <!-- <script src="js/script.js" type="module"></script> -->
   </body>
 </html>

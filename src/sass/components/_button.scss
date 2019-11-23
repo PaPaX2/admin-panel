@@ -1,10 +1,31 @@
 .btn {
-  width: 100px;
-  height: 50px;
   border-radius: 4px;
-  color: $color-orange;
+  background-color: $color-orange;
+  color: $color-semiwhite;
 }
 
-.btn:hover {
+.btn-refresh {
+  width: 40px;
+  height: 40px;
+  
+  i {
+    font-size: 20px;
+    margin: 10px;
+  }
+}
+
+.btn-refresh:hover {
   color: $color-orange-light;
+}
+
+.btn-add {
+  width: 100px;
+  height: 34px;
+  text-align: center;
+
+  p {
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: center;
+  }
 }

@@ -1,6 +1,231 @@
-.heading {
-  width: 100px;
-  height: 25px;
-  padding-left: 10px;
-  margin: 2px, auto;
+.main-content {
+
+  padding-top: 70px;
+
+  .content {
+    background-color: white;
+    margin: 15px 15px 15px 215px;
+  
+    h3 {
+      display: grid;
+    }
+  }
+
+  .title-section {
+    border-bottom: thin solid $color-grey-light;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  .section-column {
+    @include section;
+    flex-direction: column;
+  }
+
+  .section-row {
+    @include section;
+    flex-direction: row;  
+  }
+
+  .callendar {
+    margin: 20px;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    border: thin solid $color-grey-light;
+    border-radius: 4px;
+    color: $color-dark;
+
+    p {
+      margin-left: 15px;
+      font-size: 16px;
+      align-items: center;
+      display: flex;
+    }
+
+    .right-border {
+      border-right: thin solid $color-grey-light;
+    }
+  }
+
+  .date {
+    display: flex;
+    align-items: center;
+    width: 150px;
+  }
+
+  .date-callendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 50px;
+
+    i {
+      color: $color-dark-light;
+    }
+  }
+
+  .statistic-data {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+  }
+
+  .table-2-cells {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 600px;
+    margin: 25px auto;
+  }
+
+  .cell-left {
+    @include statistic-cell;
+    margin: 5px 20px 5px 0;   
+  }
+
+  .cell-right {
+    @include statistic-cell;
+    margin: 5px 0 5px 20px;   
+  }
+
+  .sub-cell {
+    height: 20px;
+    margin: 10px 0 10px 15px;
+  }
+
+  .legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .signups {
+    @include legend-item;
+    background-color: $color-semiwhite;
+ 
+    p::before {
+      background-color: $color-blue;
+    }
+  }
+
+  .ftd {
+    @include legend-item;
+    background-color: $color-semiwhite;
+ 
+    p::before {
+      background-color: $color-orange;
+    }
+  }
+
+  .earned {
+    @include legend-item;
+    color: $color-blue;
+     
+    p::before {
+      background-color: $color-green;
+    }
+  }
+
+  .chart {
+    h4 {
+      padding-left: 20px;
+    }
+
+    img {
+      width: 600px;
+      padding: 0;
+    }
+  }
+
+  .table-3-cells {
+    width: 600px;
+    margin: 10px auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-top: thin solid $color-grey-light;
+
+    tr {
+      height: 30px;
+      border-bottom: thin solid $color-grey-light;
+    }
+
+    p {
+      font-size: 17px;
+      font-weight: $font-bold;
+      color: $color-grey;
+      margin: 10px 0;
+    }
+
+    i {
+      margin: 0 5px;
+      color: $color-grey;
+      font-size: 12px;
+      opacity: 0;
+    }
+
+    a {
+      margin-left: 100px;
+    }
+
+    tr:hover {
+      background-color: $color-grey-light;
+
+      i {
+        opacity: 1;
+      }
+    }
+
+    i:hover {
+      color: $color-orange;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .main-content {
+    width: fit-content;
+
+    .content {
+      margin: auto;
+    }
+
+    .top {
+      padding-top: 70px;
+    }
+
+    .bottom {
+      padding-bottom: 70px;
+    }
+
+    .statistic-data {
+      width: 100%;
+    }
+
+    .table-3-cells {
+      width: auto;
+
+      a {
+        margin: 0 20px;
+      }
+
+      i {
+        opacity: 1;
+      }
+    }
+
+    .table-2-cells {
+      width: auto;
+    }
+
+    .chart {
+      
+      width: auto;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
 }

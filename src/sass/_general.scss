@@ -1,13 +1,10 @@
 /* Naked elements */
-.container {
-  max-width: 1300px;
-}
 
 h1 {
   font-size: 20px;
   font-weight: $font-bold;
   text-transform: uppercase;
-  color: $color-grey-light;
+  color: $color-grey;
 }
   
 h2 {
@@ -20,24 +17,24 @@ h3 {
   font-size: 17px;
   font-weight: $font-bold;
   text-transform: uppercase;
-  color: $color-grey-light;
+  color: $color-grey;
 }
 
 h4 {
   font-size: 17px;
-  font-weight: $font-semibold;
-  color: $color-grey-light;
+  font-weight: $font-bold;
+  color: $color-grey;
 }
 
 h5 {
-  font-size: 2vh;
+  font-size: 14px;
   font-weight: $font-bold;
   text-transform: uppercase;
   color: $color-grey;
 }
 
 h6 {
-  font-size: 2vh;
+  font-size: 14px;
   font-weight: $font-semibold;
   color: $color-grey;
 }
@@ -69,7 +66,7 @@ body {
 }
 
 .icon {
-  size: 2vh;
+  size: 14px;
   color: $color-grey;
   font-family: "Glyphter";
 }
