@@ -165,7 +165,7 @@
       opacity: 0;
     }
 
-    a {
+    .hide {
       margin-left: 100px;
     }
 
@@ -185,7 +185,7 @@
 
 @media (max-width: 767px) {
   .main-content {
-    width: fit-content;
+    width: 100%;
 
     .content {
       margin: 0;
@@ -197,6 +197,31 @@
 
     .bottom {
       padding-bottom: 70px;
+    }
+
+    .date {
+      width: auto;
+    }
+
+    .callendar {
+      width: auto;
+      margin: 20px 10px;
+    }
+
+    .signups, .ftd, .earned {
+      margin: 10px 10px;
+    }
+
+    .signups p, .ftd p, .earned p {
+      margin-left: 25px;
+    }
+
+    .cell-left{
+      margin: 5px 5px 5px 0;
+    }
+    
+    .cell-right {
+      margin: 5px 0 5px 5px;
     }
 
     .statistic-data {
@@ -213,6 +238,10 @@
       i {
         opacity: 1;
       }
+
+      .hide {
+        display: none;
+      }
     }
 
     .table-2-cells {
@@ -225,6 +254,34 @@
 
       img {
         width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    .statistic-data{
+      width: 500px;
+
+      img {
+        width: 500px;
+      }
+    }
+
+    .table-2-cells {
+      width: 500px;
+    }
+
+    .table-3-cells{
+      width: 500px;
+
+      .hide {
+        margin-left: 50px;
+      }
+
+      i {
+        opacity: 1;
       }
     }
   }

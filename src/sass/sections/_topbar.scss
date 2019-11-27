@@ -55,7 +55,6 @@
     bottom: 0;
     border-top: thin solid $color-grey-light;
     border-bottom: none;
-
   }
   
   .main-content {
@@ -71,6 +70,7 @@
     align-items: center;
     border: none;
     min-width: auto;
+    white-space: normal;
   }
 
   .info {
