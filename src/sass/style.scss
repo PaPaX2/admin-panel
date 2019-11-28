@@ -4,12 +4,13 @@
 @import "general";
 
 @import "normalize";
-@import "layout";
+//@import "layout";
 
 @import "../vendor/icon-font/css/Glyphter.css";
 
 /* Components */
 @import "components/button";
+@import "components/form";
 
 /* Sections */
 @import "sections/content";

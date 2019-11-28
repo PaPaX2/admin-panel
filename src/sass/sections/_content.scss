@@ -8,7 +8,11 @@
   
     h3 {
       display: grid;
-    }
+    }   
+  }
+
+  .disable {
+    display: none;
   }
 
   .title-section {
@@ -139,6 +143,13 @@
     }
   }
 
+  .p-text {
+    font-size: 17px;
+    font-weight: $font-bold;
+    color: $color-grey;
+    margin: 10px 0;
+  }
+  
   .table-3-cells {
     width: 600px;
     margin: 10px auto;
@@ -149,13 +160,6 @@
     tr {
       height: 30px;
       border-bottom: thin solid $color-grey-light;
-    }
-
-    p {
-      font-size: 17px;
-      font-weight: $font-bold;
-      color: $color-grey;
-      margin: 10px 0;
     }
 
     i {
@@ -183,6 +187,7 @@
   }
 }
 
+
 @media (max-width: 767px) {
   .main-content {
     width: 100%;
@@ -192,7 +197,7 @@
     }
 
     .top {
-      padding-top: 70px;
+      margin-top: 70px;
     }
 
     .bottom {

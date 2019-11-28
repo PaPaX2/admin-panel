@@ -16,6 +16,10 @@
   border-bottom: thin solid $color-grey-light;
 }
 
+.mobile {
+  display: none;
+}
+
 .small-size {
   @include topbar-box;
   min-width: 70px;

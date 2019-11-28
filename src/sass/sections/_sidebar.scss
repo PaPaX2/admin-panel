@@ -89,19 +89,18 @@
 
   h3 {
     margin-left: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 }
 
 .manager-list {
   display: flex;
-  height: 25px;
   margin-left: 15px;
   font-size: 18px;
   align-items: center;
 
   img {
-    margin-right: 15px;
+    margin: 15px 15px 15px 0;
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -109,16 +108,16 @@
     z-index: 0;
   }
 
-  img::after {
-    content: "xx";
+  .dot::after {
+    content: "";
     position: relative;
     display: block;
     border-radius: 50%;
-    width: 7px;
-    height: 7px;
-    background-color: $color-orange;
-    left: 6px;
+    width: 12px;
+    height: 12px;
+    background-color: $color-green;
     bottom: 16px;
+    right: 28px;
   }
 }
 
@@ -133,12 +132,12 @@ ul {
     max-width: 100%;
     width: 100%;
     display: block;
-  
-    li {
+
+    .show {
       display: none;
     }
 
-    ul:hover {
+    ul {
       background-color: $color-dark;
       width: 100%;
       margin-top: 50px;

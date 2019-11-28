@@ -65,8 +65,20 @@ body {
   
 }
 
+button {
+  padding: 0;
+  border: none;
+}
+
 .icon {
   size: 14px;
   color: $color-grey;
   font-family: "Glyphter";
+}
+
+.p-text {
+  font-size: 17px;
+  font-weight: $font-bold;
+  color: $color-grey;
+  margin: 10px 0;
 }

@@ -1,15 +1,17 @@
-const clickListener = function(){
-  const thisApp = this;
-  thisApp.items = document.querySelectorAll('.jsBudget');
-  console.log(thisApp.items);
+function toggleMenu(visible) {
+  document.querySelector('.main-menu').classList.toggle('show', visible);
+}
 
-  for (let item of thisApp.items){
-    document.addEventListener('click', function(event){
-      
-      event.preventDefault();
-      item.toggle('active');
-    });
-  }
-};
+document.querySelector('.hamburger').addEventListener('click', function(e) {
+  e.preventDefault();
+  toggleMenu();
+});
 
-clickListener();
+function toggleSection(notvisible) {
+  document.querySelector('.content').classList.toggle('disable', notvisible);
+}
+
+document.querySelector('.menu-item').addEventListener('click', function(e) {
+  e.preventDefault();
+  toggleSection();
+});

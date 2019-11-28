@@ -32,18 +32,18 @@
         <div>
             <div class="side-header">
               <div class="logo"><a  href="#home">Just do it.</a></div>
-              
-                <ul class="main-menu"><a class="hamburger" href="#"><i class="fas fa-bars"></i></a>
-                  <li class="menu-item"><a href="#"><i class="far fa-star"></i>General</a></li>
-                  <li class="menu-item"><a href="#"><i class="far fa-list-alt"></i>Details</a></li>
-                  <li class="menu-item"><a href="#"><i class="fas fa-link"></i>Links</a></li>
-                  <li class="menu-item"><a href="#"><i class="far fa-newspaper"></i>Banners</a></li>
-                  <li class="menu-item"><a href="#"><i class="far fa-user"></i>Personal Data</a></li>
-                  <li class="menu-item"><a href="#"><i class="fas fa-dollar-sign"></i>Payout</a></li>
-                  <li class="menu-item"><a href="#"><i class="fas fa-undo"></i>Postback</a></li>
+              <div class="hamburger"><a href="#"><i class="fas fa-bars"></i></a></div>
+                <ul class="main-menu show">
+                  <li class="menu-item"><a href="#general"><i class="far fa-star"></i>General</a></li>
+                  <li class="menu-item"><a href="#details"><i class="far fa-list-alt"></i>Details</a></li>
+                  <li class="menu-item"><a href="#links"><i class="fas fa-link"></i>Links</a></li>
+                  <li class="menu-item"><a href="#banners"><i class="far fa-newspaper"></i>Banners</a></li>
+                  <li class="menu-item"><a href="#personal"><i class="far fa-user"></i>Personal Data</a></li>
+                  <li class="menu-item"><a href="#payout"><i class="fas fa-dollar-sign"></i>Payout</a></li>
+                  <li class="menu-item"><a href="#postback"><i class="fas fa-undo"></i>Postback</a></li>
                   <li class="sidebar-manager">
                     <h3>your manager</h3>
-                    <a class="manager-list" href="#"><img class="face face2" src="/images/manager.jpg" alt="manager">Mikhael E.</a>
+                    <a class="manager-list" href="#"><div class="active-manager"><img class="face face2" src="/images/manager.jpg" alt="manager"><span class="dot"></span>Mikhael E.</a>
                   </li>
                 </ul>
               </div>
@@ -51,7 +51,8 @@
         </div>
       </section>
       <section class="main-content">
-        <div class="content top">
+        <div class="content">
+          <div id="general" class="active top"></div>
           <!-- Statistic-->
             <div class="title-section">
               <h3>general statistic</h3>
@@ -99,29 +100,29 @@
                     </div>
                   </div>
                 </div>
-              <div class="chart">
-                <h4>Earnings chart</h4>
-                <div class="legend">
-                  <div class="signups"><p>Signups</p></div>
-                  <div class="ftd"><p>FTD</p></div>
-                  <div class="earned"><p>Earned</p></div>
+                <div class="chart">
+                  <h4>Earnings chart</h4>
+                  <div class="legend">
+                    <div class="signups"><p>Signups</p></div>
+                    <div class="ftd"><p>FTD</p></div>
+                    <div class="earned"><p>Earned</p></div>
+                  </div>
+                  <img src="images/chart1.png" alt="chart1">
                 </div>
-                <img src="images/chart1.png" alt="chart1">
               </div>
+            </div>
           </div>
         </div>
-      </div>
-      <!--Links-->
-      <div class="content bottom">
-        <div class="title-section">
-          <h3>links</h3>
-        </div>
-        <div class="section-column">
+        <!--Links-->
+        <div id="links" class="content bottom">
+          <div class="title-section">
+            <h3>links</h3>
+          </div>
+          <div class="section-column">
             <a class="btn btn-add" href="#"><p>+ add new</p></a>
-          
             <table class="table-3-cells">
               <tr>
-                <td><p>Home page</p></td>
+                <td><p class="p-text">Home page</p></td>
                 <td><a class="hide">http://www.</a><a>homepage.com</a></td>
                 <td>
                   <i class="fas fa-link"></i>
@@ -129,7 +130,7 @@
                 </td>
               </tr>
               <tr>
-                <td><p>Currently offer</p></td>
+                <td><p class="p-text">Currently offer</p></td>
                 <td><a class="hide">http://www.</a><a>currently.com</a></td>
                 <td>
                   <i class="fas fa-link"></i>
@@ -137,7 +138,7 @@
                 </td>
               </tr>
               <tr>
-                <td><p>Blurpix</p></td>
+                <td><p class="p-text">Blurpix</p></td>
                 <td><a class="hide">http://www.</a><a>blurpix.com</a></td>
                 <td>
                   <i class="fas fa-link"></i>
@@ -145,7 +146,7 @@
                 </td>
               </tr>
               <tr>
-                <td><p>Your site</p></td>
+                <td><p class="p-text">Your site</p></td>
                 <td><a class="hide">http://www.</a><a>yoursite.com</a></td>
                 <td>
                   <i class="fas fa-link"></i>
@@ -153,7 +154,7 @@
                 </td>
               </tr>
               <tr>
-                <td><p>Google</p></td>
+                <td><p class="p-text">Google</p></td>
                 <td><a class="hide">http://www.</a><a>google.com</a></td>
                 <td>
                   <i class="fas fa-link"></i>
@@ -161,7 +162,7 @@
                 </td>
               </tr>
               <tr>
-                <td><p>Facebook</p></td>
+                <td><p class="p-text">Facebook</p></td>
                 <td><a class="hide">http://www.</a><a>facebook.com</a></td>
                 <td>
                   <i class="fas fa-link"></i>
@@ -169,7 +170,7 @@
                 </td>
               </tr>
               <tr>
-                <td><p>Dashboard</p></td>
+                <td><p class="p-text">Dashboard</p></td>
                 <td><a class="hide">http://www.</a><a>dashboard.com</a></td>
                 <td>
                   <i class="fas fa-link"></i>
@@ -177,7 +178,7 @@
                 </td>
               </tr>
               <tr>
-                <td><p>Blurax</p></td>
+                <td><p class="p-text">Blurax</p></td>
                 <td><a class="hide">http://www.</a><a>blurax.com</a></td>
                 <td>
                   <i class="fas fa-link"></i>
@@ -185,7 +186,7 @@
                 </td>
               </tr>
               <tr>
-                <td><p>Piece of Wine</p></td>
+                <td><p class="p-text">Piece of Wine</p></td>
                 <td><a class="hide">http://www.</a><a>pieceofwine.com</a></td>
                 <td>
                   <i class="fas fa-link"></i>
@@ -193,7 +194,7 @@
                 </td>
               </tr>
               <tr>
-                <td><p>Twitter</p></td>
+                <td><p class="p-text">Twitter</p></td>
                 <td><a class="hide">http://www.</a><a>twitter.com</a></td>
                 <td>
                   <i class="fas fa-link"></i>
@@ -204,6 +205,105 @@
           <a class="btn btn-add" href="#"><p>+ add new</p></a>
         </div>
       </div>
+      <!--Banners-->
+      <div id="banners" class="content bottom">
+        <div class="title-section">
+          <h3>banners</h3>
+        </div>
+        <div class="section-column">
+          <a class="btn btn-add" href="#"><p>+ add new</p></a>
+          <table class="table-3-cells">
+            <tr>
+              <td><p class="p-text">Banner Main</p></td>
+              <td><a class="hide">http://www.</a><a>website.com/bannermain.gif</a></td>
+              <td>
+                <i class="fas fa-link"></i>
+                <i class="fas fa-trash-alt"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><p class="p-text">Signup banner</p></td>
+              <td><a class="hide">http://www.</a><a>website.com/signup.gif</a></td>
+              <td>
+                <i class="fas fa-link"></i>
+                <i class="fas fa-trash-alt"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><p class="p-text">Banner left side</p></td>
+              <td><a class="hide">http://www.</a><a>website.com/leftside.gif</a></td>
+              <td>
+                <i class="fas fa-link"></i>
+                <i class="fas fa-trash-alt"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><p class="p-text">Vertical Banner</p></td>
+              <td><a class="hide">http://www.</a><a>website.com/vert.gif</a></td>
+              <td>
+                <i class="fas fa-link"></i>
+                <i class="fas fa-trash-alt"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><p class="p-text">Front Banner</p></td>
+              <td><a class="hide">http://www.</a><a>website.com/front.gif</a></td>
+              <td>
+                <i class="fas fa-link"></i>
+                <i class="fas fa-trash-alt"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><p class="p-text">Horizontal</p></td>
+              <td><a class="hide">http://www.</a><a>website.com/horizontal.gif</a></td>
+              <td>
+                <i class="fas fa-link"></i>
+                <i class="fas fa-trash-alt"></i>
+              </td>
+            </tr>
+          </table>
+          <a class="btn btn-add" href="#"><p>+ add new</p></a>
+        </div>
+      </div>
+       <!-- Form -->
+      <div id="form" class="content bottom">
+        <div class="title-section">
+          <h3>personal data</h3>
+        </div>
+        <div class="section-column">
+          <form action="" method="POST">
+            
+              <div class="field">
+                <label class="p-text">Name</label>
+                <input type="text" name="name">
+              </div>
+              <div class="field">
+                <label class="p-text">Surname</label>
+                <input type="text" name="surname">
+              </div>
+              <div class="field">
+                <label class="p-text">E-mail</label>
+                <input type="email" name="e-mail">
+              </div>
+              <div class="field">
+                <label class="p-text">Phone number</label>
+                <input type="tel" name="phone">
+              </div>
+            
+            <div class="section-row">
+          
+            </div>
+            <div class="section-row">
+          
+            </div>
+            <div class="section-row">
+          
+            </div>
+          
+            <button type="submit" class="btn btn-add"><p>Save</p></button>
+          </form>
+        </div>
+      </div>  
     </section>
     <section class="top-bar mobile">
       <div class="bar-content">
@@ -224,6 +324,6 @@
           <div class="exit small-size"><i class="fas fa-sign-out-alt"></i></div>
       </div>
     </section>
-  <!-- <script src="js/script.js" type="module"></script> -->
+  <script src="js/script.js" type="module"></script>
   </body>
 </html>
