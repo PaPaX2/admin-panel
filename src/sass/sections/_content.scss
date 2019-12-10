@@ -74,14 +74,7 @@
   .statistic-data {
     display: flex;
     flex-direction: column;
-    width: 600px;
-  }
-
-  .table-2-cells {
-    display: grid;
-    grid-template-columns: auto auto;
-    width: 600px;
-    margin: 25px auto;
+    width: 800px;
   }
 
   .cell-left {
@@ -138,7 +131,7 @@
     }
 
     img {
-      width: 600px;
+      width: 800px;
       padding: 0;
     }
   }
@@ -150,41 +143,7 @@
     margin: 10px 0;
   }
   
-  .table-3-cells {
-    width: 600px;
-    margin: 10px auto;
-    border-collapse: collapse;
-    border-spacing: 0;
-    border-top: thin solid $color-grey-light;
-
-    tr {
-      height: 30px;
-      border-bottom: thin solid $color-grey-light;
-    }
-
-    i {
-      margin: 0 5px;
-      color: $color-grey;
-      font-size: 12px;
-      opacity: 0;
-    }
-
-    .hide {
-      margin-left: 100px;
-    }
-
-    tr:hover {
-      background-color: $color-grey-light;
-
-      i {
-        opacity: 1;
-      }
-    }
-
-    i:hover {
-      color: $color-orange;
-    }
-  }
+  
 }
 
 
@@ -194,8 +153,17 @@
 
     .content {
       margin: 0;
+      height: 100%;
     }
 
+    .section-row {
+      min-width: 300px;
+    }
+
+    .active {
+      padding: 70px 0;
+    }
+    
     .top {
       margin-top: 70px;
     }
@@ -237,7 +205,7 @@
       width: auto;
 
       a {
-        margin: 0 20px;
+        margin: 0 5px;
       }
 
       i {
@@ -264,7 +232,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1020px) {
   .main-content {
     .statistic-data{
       width: 500px;

@@ -82,3 +82,9 @@ button {
   color: $color-grey;
   margin: 10px 0;
 }
+
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
