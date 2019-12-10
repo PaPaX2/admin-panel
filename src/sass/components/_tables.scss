@@ -71,6 +71,24 @@
     }
   }
 
+  .nav-table {
+    a {
+      font-size: 16px;
+      margin: 0 7px;
+      color: $color-blue;
+    }
+
+    i {
+      margin: 0 10px;
+      color: $color-grey;
+    }
+
+    .current {
+      color: $color-grey;
+      font-weight: bold;
+    }
+  }
+
   th:hover {
     color: black;
 
@@ -86,7 +104,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1020px) {
   .scroll-wrapper {
     width: 100%;
   }
