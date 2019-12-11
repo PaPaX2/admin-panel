@@ -44,3 +44,52 @@ for (let link of links) {
   });
   //END loop
 }
+
+//OVERLAY part
+
+//Fuction that remove class show in overlay
+function closeModal() {
+  document.getElementById('overlay').classList.remove('show');
+}
+
+//Function that close modal after click X
+document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    closeModal();
+  });
+});
+
+//Function that close modal after clicking background
+document.querySelector('#overlay').addEventListener('click', function(e) {
+  if(e.target === this) {
+    closeModal();
+  }
+});
+
+//Function that close modal after using Esc kay
+document.addEventListener('keyup', function(e) {
+  if(e.keyCode === 27) {
+    closeModal();
+  }
+});
+
+//Function that open one Pop Up and close others
+function openModal(modal) {
+  document.querySelectorAll('#overlay > *').forEach(function(modalId) {
+    modalId.classList.remove('show');
+  });
+  document.querySelector('#overlay').classList.add('show');
+  document.querySelector(modal).classList.add('show');
+}
+
+//LOOP for clicked modal link
+const modalLinks = document.querySelectorAll('.modal-execute');
+for (let link of modalLinks) {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const modal = '.' + link.getAttribute('id');
+    openModal(modal);
+  });
+}
+

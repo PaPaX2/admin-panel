@@ -21,11 +21,11 @@
               <i class="fas fa-angle-down"></i>
             </div>
             <div class="info small-size"><i class="far fa-bell"></i></div>
-            <div class="user medium-size">
+            <div id="login" class="modal-execute user medium-size">
               <div><i class="far fa-user-circle"></i></div>
               <div><a>Leonardo diCaprio</a></div>
             </div>
-            <div class="exit small-size"><i class="fas fa-sign-out-alt"></i></div>
+            <div id="quit" class="modal-execute exit small-size"><i class="fas fa-sign-out-alt"></i></div>
         </div>
       </section>
       <section class="sidebar">
@@ -41,7 +41,7 @@
                   <li class="menu-item"><a href="#personal-form"><i class="far fa-user"></i>Personal Data</a></li>
                   <li class="menu-item"><a href="#payout"><i class="fas fa-dollar-sign"></i>Payout</a></li>
                   <li class="menu-item"><a href="#postback"><i class="fas fa-undo"></i>Postback</a></li>
-                  <li class="sidebar-manager">
+                  <li id="chat" class="modal-execute sidebar-manager">
                     <h3>your manager</h3>
                     <a class="manager-list" href="#"><div class="active-manager"><img class="face face2" src="/images/manager.jpg" alt="manager"><span class="dot"></span>Mikhael E.</a>
                   </li>
@@ -479,6 +479,42 @@
             <div><a>Leonardo diCaprio</a></div>
           </div>
           <div class="exit small-size"><i class="fas fa-sign-out-alt"></i></div>
+      </div>
+    </section>
+    <!--Pop up-->
+    <section>
+      <div class="overlay" id="overlay">
+        <!--Chat-->
+        <div class="modal show quit" id="modal">
+          <div class="btn-close js--close-modal">x</div>
+            <h4>Witaj w modalu!</h4>
+            <p>Lorem ipsum dolor sit amet...</p>
+           <button class="js--close-modal">Okay</button>
+        </div>
+        <div class="modal show chat" id="modal">
+          <div class="btn-close js--close-modal">x</div>
+            <h4 class="modal-section">online chat with your personal manager</h4>
+            <div class="modal-section">
+              <img class="face face2" src="/images/manager.jpg" alt="manager">
+            </div>
+            <div class="modal-section">
+              <p>Hello Can I help you?</p>
+              <p>Hello I would like to know about postback</p>
+              <p>Ok 5min..</p>
+            </div>
+            <div class="modal-section">
+                <form action="" method="POST">
+                  <input type="text" name="name" value="Leonardo">
+                  <button class="js--close-modal">Send</button>
+                </form>
+            </div>
+          </div>
+          <div class="modal show login" id="modal">
+            <div class="btn-close js--close-modal">x</div>
+              <h4>Witaj w modalu!</h4>
+              <p>Lorem ipsum dolor sit amet...</p>
+            <button class="js--close-modal">Okay</button>
+          </div>
       </div>
     </section>
   <script src="js/script.js" type="module"></script>
