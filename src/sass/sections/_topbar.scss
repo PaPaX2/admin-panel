@@ -23,11 +23,13 @@
 .small-size {
   @include topbar-box;
   min-width: 70px;
+  cursor: pointer;
 }
 
 .medium-size {
   @include topbar-box;
   min-width: 210px;
+  cursor: pointer;
   
 }
 

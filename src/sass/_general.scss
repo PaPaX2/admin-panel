@@ -88,3 +88,10 @@ button {
   width: 100%;
   overflow-x: auto;
 }
+
+.bottom-border-line {
+  border-bottom: thin solid $color-grey-light;
+  width: 100%;
+  margin: 0 15px;
+}
+
