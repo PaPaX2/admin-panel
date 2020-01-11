@@ -3,6 +3,10 @@
 /* Fonts */
 /* Naked elements */
 @import url(../vendor/icon-font/css/Glyphter.css);
+* {
+  box-sizing: border-box;
+}
+
 h1 {
   font-size: 20px;
   font-weight: 700;
@@ -630,10 +634,6 @@ template {
   }
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .overlay {
   position: fixed;
   top: 0;
@@ -780,7 +780,9 @@ template {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  width: 150px;
+  width: 135px;
+  border: none;
+  padding-left: 30px;
 }
 
 .main-content .date-callendar {
@@ -796,6 +798,7 @@ template {
 
 .main-content .date-callendar i {
   color: #979797;
+  padding-right: 15px;
 }
 
 .main-content .statistic-data {
@@ -863,7 +866,7 @@ template {
   margin: 7px 10px 7px 40px;
 }
 
-.main-content .signups p::before {
+.main-content .signups p:before {
   content: "";
   position: absolute;
   display: block;
@@ -889,7 +892,7 @@ template {
   margin: 7px 10px 7px 40px;
 }
 
-.main-content .ftd p::before {
+.main-content .ftd p:before {
   content: "";
   position: absolute;
   display: block;
@@ -915,7 +918,7 @@ template {
   margin: 7px 10px 7px 40px;
 }
 
-.main-content .earned p::before {
+.main-content .earned p:before {
   content: "";
   position: absolute;
   display: block;

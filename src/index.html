@@ -43,7 +43,7 @@
                   <li class="menu-item"><a href="#postback"><i class="fas fa-undo"></i>Postback</a></li>
                   <li id="chat" class="modal-execute sidebar-manager">
                     <h3>your manager</h3>
-                    <a class="manager-list" href="#"><div class="active-manager"><img class="face face2" src="/images/manager.jpg" alt="manager"><span class="dot"></span>Mikhael E.</a>
+                    <div class="active-manager"></div><a class="manager-list" href="#"><img class="face face2" src="/images/manager.jpg" alt="manager"><span class="dot"></span>Mikhael E.</a>
                   </li>
                 </ul>
               </div>
@@ -53,23 +53,19 @@
       <section class="main-content">
         <!-- General-->
         <div id="general" class="content top">
-            <div class="title-section">
-              <h3>general statistic</h3>
-            </div>
-            <div class="section-row">
-              <div class="callendar">
-                <div class="date">
-                  <p>16.05.2016</p>
-                </div>
-                <div class="date">
-                  <span class="right-border"><p></p></span>
-                  <p>16.05.2016</p>
-                </div>
-                <div class="date-callendar">
-                    <a href="#"><i class="fas fa-calendar-alt"></i></a>
-                </div>
+          <div class="title-section">
+            <h3>general statistic</h3>
+          </div>
+          <div class="section-row">
+            <div class="callendar">
+              <input class="date" type="text" value="16.05.2016"></input>
+              <span class="right-border"></span>
+              <input class="date" type="text" value="16.05.2016"></input>
+              <div class="date-callendar">
+                <a href="#"><i class="fas fa-calendar-alt"></i></a>
               </div>
-              <a class="btn btn-refresh" href="#" ><i class="fas fa-redo"></i></a>
+            </div>
+            <a class="btn btn-refresh" href="#" ><i class="fas fa-redo"></i></a>
             </div>
             <div class="section-row">
               <div class="statistic-data">
@@ -111,7 +107,6 @@
               </div>
             </div>
           </div>
-        </div>
         <!-- Details-->
         <div id="details" class="content bottom disable">
           <div class="title-section">
@@ -119,15 +114,11 @@
           </div>
           <div class="section-row">
             <div class="callendar">
-              <div class="date">
-                <p>16.05.2016</p>
-              </div>
-              <div class="date">
-                <span class="right-border"><p></p></span>
-                <p>16.05.2016</p>
-              </div>
+              <input class="date" type="text" value="16.05.2016"></input>
+              <span class="right-border"></span>
+              <input class="date" type="text" value="16.05.2016"></input>
               <div class="date-callendar">
-                  <a href="#"><i class="fas fa-calendar-alt"></i></a>
+                <a href="#"><i class="fas fa-calendar-alt"></i></a>
               </div>
             </div>
             <a class="btn btn-refresh" href="#" ><i class="fas fa-redo"></i></a>
@@ -135,7 +126,7 @@
           <div class="scroll-wrapper">
             <table class="table-big">
               <thead>
-                <th>Tracker name<i class="fas fa-angle-down"></i></th><th>Initiated date<i class="fas fa-angle-down"></i></th><th>Visits<i class="fas fa-angle-down"></i></th><th>Unique<i class="fas fa-angle-down"></i></th><th>Signups<i class="fas fa-angle-down"></i></th><th>FTD<i class="fas fa-angle-down"></i></th><th>Depositors<i class="fas fa-angle-down"></i></th><th>Deposits ($)<i class="fas fa-angle-down"></i></th><th>Payout ($)<i class="fas fa-angle-down"></i><th>Turnover<i class="fas fa-angle-down"></i></th><th>Deal<i class="fas fa-angle-down"></i></th>
+                <tr><th>Tracker name<i class="fas fa-angle-down"></i></th><th>Initiated date<i class="fas fa-angle-down"></i></th><th>Visits<i class="fas fa-angle-down"></i></th><th>Unique<i class="fas fa-angle-down"></i></th><th>Signups<i class="fas fa-angle-down"></i></th><th>FTD<i class="fas fa-angle-down"></i></th><th>Depositors<i class="fas fa-angle-down"></i></th><th>Deposits ($)<i class="fas fa-angle-down"></i></th><th>Payout ($)<i class="fas fa-angle-down"></i><th>Turnover<i class="fas fa-angle-down"></i></th><th>Deal<i class="fas fa-angle-down"></i></th></tr>
               </thead>
               <tbody>
                 <tr>
@@ -326,83 +317,63 @@
         <div class="title-section">
           <h3>personal data</h3>
         </div>
-        <form action="" method="POST">
+        <form action="#" method="POST">
           <div class="section-column">
             <table class="form-table">
               <tr>
-                <div class="field">
-                  <td class="left"><label class="p-text">Name</label></td>
-                  <td class="right"><input type="text" name="name" value="Leonardo"></td>
-                </div>
+                <td class="left"><label class="p-text">Name</label></td>
+                <td class="right"><input type="text" name="name" value="Leonardo"></td>
               </tr>
               <tr>
-                <div class="field">
-                  <td class="left"><label class="p-text">Surname</label></td>
-                  <td class="right"><input type="text" name="surname" value="diCaprio"></td>
-                </div>
+                <td class="left"><label class="p-text">Surname</label></td>
+                <td class="right"><input type="text" name="surname" value="diCaprio"></td>
               </tr>
               <tr>
-                <div class="field">
-                  <td class="left"><label class="p-text">E-mail</label></td>
-                  <td class="right"><input type="email" name="e-mail" value="leo@gmail.com"></td> 
-                </div>
+                <td class="left"><label class="p-text">E-mail</label></td>
+                <td class="right"><input type="email" name="e-mail" value="leo@gmail.com"></td> 
               </tr>
               <tr>
-                <div class="field">
                   <td class="left"><label class="p-text">Phone number</label></td>
                   <td class="right"><input type="tel" name="phone" value="+1 234 5555 67 89"></td>
-                </div>
               </tr>
             </table>
             <span class="bottom-border-line"></span>
             <table class="form-table">
               <tr>
-                <div class="field">
-                  <td class="left"><label class="p-text">Skype</label></td>
-                  <td class="right"><input type="text" name="name" value="Leonardo D."></td>
-                </div>
+                <td class="left"><label class="p-text">Skype</label></td>
+                <td class="right"><input type="text" name="name" value="Leonardo D."></td>
               </tr>
               <tr>
-                <div class="field">
-                  <td class="left"><label class="p-text">ICQ</label></td>
-                  <td class="right"><input type="text" name="surname" value=""></td>
-                </div>
+                <td class="left"><label class="p-text">ICQ</label></td>
+                <td class="right"><input type="text" name="surname" value=""></td>
               </tr>
               <tr>
-                <div class="field">
-                  <td class="left"><label class="p-text">MSN</label></td>
-                  <td class="right"><input type="text" name="e-mail" value=""></td> 
-                </div>
+                <td class="left"><label class="p-text">MSN</label></td>
+                <td class="right"><input type="text" name="e-mail" value=""></td> 
               </tr>
             </table>
             <span class="bottom-border-line"></span>
             <table>
               <tr>
-                <div class="field">
-                  <td class="left"><label class="p-text">WALLET</label></td>
-                  <td class="right"><input type="text" name="wallet" value=""></td> 
-                </div>
+                <td class="left"><label class="p-text">WALLET</label></td>
+                <td class="right"><input type="text" name="wallet" value=""></td> 
               </tr>
             </table>
             <span class="bottom-border-line"></span>
             <table>
               <tr>
-                <div class="field">
-                  <td class="left"><label class="p-text">Password</label></td>
-                  <td class="right"><input type="password" name="password" value=""></td> 
-                </div>
+                <td class="left"><label class="p-text">Password</label></td>
+                <td class="right"><input type="password" name="password" value=""></td> 
               </tr>
               <tr>
-                <div class="field">
-                  <td class="left"><label class="p-text">Repeat</label></td>
-                  <td class="right"><input type="password" name="password" value=""></td> 
-                </div>
+                <td class="left"><label class="p-text">Repeat</label></td>
+                <td class="right"><input type="password" name="password" value=""></td> 
               </tr>
             </table>
             <span class="bottom-border-line"></span>
-            <button type="submit" class="btn btn-add"><p>Save</p></button>
-          </form>
-        </div>
+            <button type="submit" class="btn btn-add">Save</button>
+          </div>
+        </form>
       </div>
     <!--Payout--> 
     <div id="payout" class="content bottom disable">
@@ -411,15 +382,11 @@
         </div>
         <div class="section-row">
           <div class="callendar">
-            <div class="date">
-              <p>16.05.2016</p>
-            </div>
-            <div class="date">
-              <span class="right-border"><p></p></span>
-              <p>16.05.2016</p>
-            </div>
+            <input class="date" type="text" value="16.05.2016"></input>
+            <span class="right-border"></span>
+            <input class="date" type="text" value="16.05.2016"></input>
             <div class="date-callendar">
-                <a href="#"><i class="fas fa-calendar-alt"></i></a>
+              <a href="#"><i class="fas fa-calendar-alt"></i></a>
             </div>
           </div>
           <a class="btn btn-refresh" href="#" ><i class="fas fa-redo"></i></a>
@@ -427,7 +394,7 @@
         <div class="scroll-wrapper">
           <table class="table-big">
             <thead>
-              <th>Date<i class="fas fa-angle-down"></i></th><th>Amount<i class="fas fa-angle-down"></i></th><th>Deal<i class="fas fa-angle-down"></i></th><th>Account<i class="fas fa-angle-down"></i></th>
+              <tr><th>Date<i class="fas fa-angle-down"></i></th><th>Amount<i class="fas fa-angle-down"></i></th><th>Deal<i class="fas fa-angle-down"></i></th><th>Account<i class="fas fa-angle-down"></i></th></tr>
             </thead>
             <tbody>
               <tr>
@@ -455,7 +422,7 @@
                 <td>15/08/02 (12:58)</td><td>29,436.00</td><td>cpl(200)</td><td>bank</td>
               </tr>
               <tr>
-                <td colspan="11" class="nav-table"><i class="fas fa-angle-left"></i><a class="current">1</a><a>2</a><a>3</a><a>4</a><a>5</a><a>6</a><a>7</a><a>8</a><a>9</a><i class="fas fa-angle-right"></i></td>
+                <td colspan="4" class="nav-table"><i class="fas fa-angle-left"></i><a class="current">1</a><a>2</a><a>3</a><a>4</a><a>5</a><a>6</a><a>7</a><a>8</a><a>9</a><i class="fas fa-angle-right"></i></td>
               </tr>
             </tbody>
           </table>
@@ -485,13 +452,13 @@
     <section>
       <div class="overlay" id="overlay">
         <!--Chat-->
-        <div class="modal quit" id="modal">
+        <div class="modal quit">
           <div class="btn-close js--close-modal">x</div>
             <h4>Witaj w modalu!</h4>
             <p>Lorem ipsum dolor sit amet...</p>
            <button class="js--close-modal">Okay</button>
         </div>
-        <div class="modal chat" id="modal">
+        <div class="modal chat">
           <div class="btn-close js--close-modal">x</div>
             <h4 class="modal-section">ONLINE CHAT WITH YOUR PERSONAL MANAGER</h4>
             <div class="modal-section manager-list">
@@ -504,13 +471,13 @@
               <p>Ok 5min..</p>
             </div>
             <div class="modal-section">
-                <form action="" method="POST">
+                <form action="#" method="POST">
                   <input type="text" name="name" value="Leonardo">
                   <button class="js--close-modal">Send</button>
                 </form>
             </div>
           </div>
-          <div class="modal login" id="modal">
+          <div class="modal login">
             <div class="btn-close js--close-modal">x</div>
               <h4>Witaj w modalu!</h4>
               <p>Lorem ipsum dolor sit amet...</p>

@@ -29,17 +29,17 @@
   p {
     font-size: 18px;
     margin: 7px 10px 7px 40px;
-  } 
-
-  p::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    left: 5px;
-    margin: 3px 0;
+  
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      left: 5px;
+      margin: 3px 0;
+    }
   }
 }
 

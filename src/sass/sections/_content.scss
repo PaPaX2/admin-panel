@@ -56,7 +56,9 @@
   .date {
     display: flex;
     align-items: center;
-    width: 150px;
+    width: 135px;
+    border: none;
+    padding-left: 30px;
   }
 
   .date-callendar {
@@ -68,6 +70,7 @@
 
     i {
       color: $color-dark-light;
+      padding-right: 15px;
     }
   }
 
