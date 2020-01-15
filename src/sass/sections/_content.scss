@@ -144,9 +144,7 @@
     font-weight: $font-bold;
     color: $color-grey;
     margin: 10px 0;
-  }
-  
-  
+  }  
 }
 
 
@@ -177,19 +175,32 @@
 
     .date {
       width: auto;
+      padding-left: 15px;
     }
 
     .callendar {
       width: auto;
       margin: 20px 10px;
+
+      input {
+        width: 100px;
+      }
+
+      .date-callendar {
+        width: 30px;
+
+        i {
+          padding-right: 0px;
+        }
+      }
     }
 
     .signups, .ftd, .earned {
       margin: 10px 10px;
-    }
 
-    .signups p, .ftd p, .earned p {
-      margin-left: 25px;
+      &p {
+        margin-left: 25px;
+      }
     }
 
     .cell-left{

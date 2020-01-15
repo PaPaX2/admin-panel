@@ -12,10 +12,10 @@
     font-size: 20px;
     margin: 10px;
   }
-}
 
-.btn-refresh:hover {
-  color: $color-orange-light;
+  &:hover {
+    color: $color-orange-light;
+  }
 }
 
 .btn-add {

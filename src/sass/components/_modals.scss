@@ -17,10 +17,10 @@
   display: none;
 
   cursor: pointer;
-}
 
-.overlay.show {
-  display: flex;
+  &.show {
+    display: flex;
+  }
 }
 
 .modal {
@@ -31,18 +31,18 @@
   padding: 30px;
   display: none;
   cursor: auto;
-}
 
-.modal.show {
-  display: block;
-}
+  &.show {
+    display: block;
+  }
 
-.modal .btn-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 5px 10px;
-  cursor: pointer;
+  .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
 }
 
 .chat-info::after {

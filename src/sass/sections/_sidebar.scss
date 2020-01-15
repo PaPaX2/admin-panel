@@ -65,18 +65,18 @@
     color: $color-grey;
     font-weight: $font-normal;
   }
-}
 
-.menu-item:hover {
-  margin: 5px 0;
-  border-left: 4px solid $color-orange;
-
-  a {
-    color: $color-semiwhite;
-  }
-
-  i {
-    margin-left: 11px;
+  &:hover {
+    margin: 5px 0;
+    border-left: 4px solid $color-orange;
+  
+    a {
+      color: $color-semiwhite;
+    }
+  
+    i {
+      margin-left: 11px;
+    }
   }
 }
 

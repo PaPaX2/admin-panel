@@ -505,16 +505,16 @@ template {
   #personal-form table {
     margin: 5px;
   }
-  #personal-form td {
+  #personal-form table td {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
   }
-  #personal-form .left {
+  #personal-form table .left {
     padding: 2px;
   }
-  #personal-form input {
+  #personal-form table input {
     width: 230px;
   }
 }
@@ -541,14 +541,18 @@ template {
   border-bottom: thin solid #e3e3e3;
 }
 
-.table-3-cells i {
+.table-3-cells tr i {
   margin: 0 5px;
   color: #979797;
   font-size: 12px;
   opacity: 0;
 }
 
-.table-3-cells .hide {
+.table-3-cells tr i:hover {
+  color: #f58220;
+}
+
+.table-3-cells tr .hide {
   margin-left: 100px;
 }
 
@@ -558,10 +562,6 @@ template {
 
 .table-3-cells tr:hover i {
   opacity: 1;
-}
-
-.table-3-cells i:hover {
-  color: #f58220;
 }
 
 .scroll-wrapper {
@@ -587,12 +587,26 @@ template {
   border-bottom: thin solid #e3e3e3;
 }
 
+.table-big td {
+  text-align: center;
+}
+
 .table-big th {
   color: #979797;
 }
 
 .table-big th i {
   opacity: 0;
+  color: #979797;
+  margin-left: 5px;
+}
+
+.table-big th:hover {
+  color: black;
+}
+
+.table-big th:hover i {
+  opacity: 1;
 }
 
 .table-big .nav-table a {
@@ -609,20 +623,6 @@ template {
 .table-big .nav-table .current {
   color: #979797;
   font-weight: bold;
-}
-
-.table-big th:hover {
-  color: black;
-}
-
-.table-big th:hover i {
-  opacity: 1;
-  color: #979797;
-  margin-left: 5px;
-}
-
-.table-big td {
-  text-align: center;
 }
 
 @media (max-width: 1020px) {
@@ -971,15 +971,25 @@ template {
   }
   .main-content .date {
     width: auto;
+    padding-left: 15px;
   }
   .main-content .callendar {
     width: auto;
     margin: 20px 10px;
   }
+  .main-content .callendar input {
+    width: 100px;
+  }
+  .main-content .callendar .date-callendar {
+    width: 30px;
+  }
+  .main-content .callendar .date-callendar i {
+    padding-right: 0px;
+  }
   .main-content .signups, .main-content .ftd, .main-content .earned {
     margin: 10px 10px;
   }
-  .main-content .signups p, .main-content .ftd p, .main-content .earned p {
+  .main-content .signupsp, .main-content .ftdp, .main-content .earnedp {
     margin-left: 25px;
   }
   .main-content .cell-left {
