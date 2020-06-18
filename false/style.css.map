@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "../docs/css/style.css",
+	"sources": [
+		"../src/sass/style.scss"
+	],
+	"names": [],
+	"mappings": ""
+}
